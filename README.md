@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# Cadastro e Listagem de Produtos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web para cadastro e listagem de produtos, desenvolvida com React, TypeScript, Vite e Tailwind CSS. A aplicação permite que os usuários cadastrem novos produtos, visualizem uma lista de produtos cadastrados e ordenem os produtos por valor.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Cadastro de produtos com nome, descrição, valor e disponibilidade para venda.
+- Listagem de produtos com ordenação por valor.
+- Destaque visual para produtos disponíveis e não disponíveis para venda.
+- Navegação entre as páginas de cadastro e listagem.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [React](https://reactjs.org/): Biblioteca JavaScript para construção de interfaces de usuário.
+- [TypeScript](https://www.typescriptlang.org/): Superset do JavaScript que adiciona tipagem estática ao código.
+- [Vite](https://vitejs.dev/): Ferramenta de build rápida e moderna para desenvolvimento web.
+- [Tailwind CSS](https://tailwindcss.com/): Framework de CSS utilitário para estilização rápida e eficiente.
+- [Font Awesome](https://fontawesome.com/): Biblioteca de ícones para uso em interfaces web.
 
-- Configure the top-level `parserOptions` property like this:
+## Estrutura do Projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+O projeto segue uma arquitetura organizada em componentes:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- `Home`: Página inicial com navegação principal.
+- `CadastroProduto`: Formulário de cadastro de produtos.
+- `ListaProdutos`: Visualização e ordenação dos produtos.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Interface do Usuário
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Design moderno e minimalista.
+- Feedback visual para ações do usuário.
+- Navegação intuitiva entre funcionalidades.
+- Indicadores claros de status dos produtos.
+
+
+---
+
+Desenvolvido Por [Leonardo Henrique](https://www.linkedin.com/in/leonardo-henrikku/)
